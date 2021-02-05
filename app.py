@@ -5,13 +5,14 @@ import numpy as np
 from keras.preprocessing.sequence import pad_sequences
 from keras.models import model_from_json 
 import pickle
+app = Flask(__name__)
 vocab_size = 12708
 maxlen = 30
 # loading
 with open('tokenizer.pickle', 'rb') as handle:
     tokenizer1 = pickle.load(handle)
 
-app = Flask(__name__)
+
 #model = pickle.load(open('model.pkl', 'rb'))
 json_file = open('model.json','r')
 loaded_model_json = json_file.read()
