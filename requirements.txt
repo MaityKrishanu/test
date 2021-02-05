@@ -8,5 +8,6 @@ numpy
 scipy
 scikit-learn
 matplotlib
+tensorflow
 pandas
 keras
