@@ -8,6 +8,6 @@ numpy
 scipy
 scikit-learn
 matplotlib
-tensorflow==1.15
+tflite
 pandas
 keras
